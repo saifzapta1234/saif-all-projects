@@ -25,19 +25,19 @@ function ProjectCard({ p }) {
   );
 }
 
-export default function Work() {
-  // return (
-  //   <section id="work">
-  //     <div className="wrap">
-  //       <Reveal className="sh">
-  //         <div>
-  //           <Label>Selected work</Label>
-  //           <h2>Projects that are <span className="gt">live.</span></h2>
-  //         </div>
-  //         <p>Websites and digital experiences I’ve contributed to, starting with ZAPTA.</p>
-  //       </Reveal>
-  //       <div className="grid">{PROJECTS.map((p) => <ProjectCard key={p.n} p={p} />)}</div>
-  //     </div>
-  //   </section>
-  // );
-}
+// export default function Work() {
+//   return (
+//     <section id="work">
+//       <div className="wrap">
+//         <Reveal className="sh">
+//           <div>
+//             <Label>Selected work</Label>
+//             <h2>Projects that are <span className="gt">live.</span></h2>
+//           </div>
+//           <p>Websites and digital experiences I’ve contributed to, starting with ZAPTA.</p>
+//         </Reveal>
+//         <div className="grid">{PROJECTS.map((p) => <ProjectCard key={p.n} p={p} />)}</div>
+//       </div>
+//     </section>
+//   );
+// }
