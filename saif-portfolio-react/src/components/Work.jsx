@@ -1,4 +1,4 @@
-import { Arrow, Label, Reveal } from './ui.jsx';
+import { Label, Reveal } from './ui.jsx';
 import { PROJECTS } from '../data.js';
 
 // Temporarily hidden from the website while this section is being worked on.
@@ -19,9 +19,6 @@ function ProjectCard({ p }) {
           <h3>{p.n}</h3>
           <p>{p.d}</p>
           <div className="chips">{p.c.map((x) => <span key={x}>{x}</span>)}</div>
-          {p.u
-            ? <a className="lnk" href={p.u} target="_blank" rel="noopener noreferrer">Visit site <Arrow /></a>
-            : <span className="na">LINK AVAILABLE ON REQUEST</span>}
         </div>
       </div>
     </Reveal>
