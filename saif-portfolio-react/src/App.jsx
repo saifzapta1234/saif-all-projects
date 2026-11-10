@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
-// import Work from './components/Work.jsx';
+import Work from './components/Work.jsx';
 import About from './components/About.jsx';
 import Toolkit from './components/Toolkit.jsx';
 import Contact from './components/Contact.jsx';

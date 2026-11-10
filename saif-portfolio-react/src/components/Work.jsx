@@ -1,9 +1,6 @@
 import { Label, Reveal } from './ui.jsx';
 import { PROJECTS } from '../data.js';
 
-// Temporarily hidden from the website while this section is being worked on.
-// The full component is preserved here and can be re-enabled later.
-/*
 function ProjectCard({ p }) {
   return (
     <Reveal as="article" className={'card' + (p.big ? ' big' : '')}>
@@ -40,9 +37,4 @@ export default function Work() {
       </div>
     </section>
   );
-}
-*/
-
-export default function Work() {
-  return null;
 }
