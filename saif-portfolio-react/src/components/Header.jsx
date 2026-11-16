@@ -57,6 +57,13 @@ export default function Header({ currentPage = 'home', onNavigate, onToggleTheme
           >
             Toolkit
           </a>
+          <a
+            href="#contact-page"
+            className={currentPage === 'contact' ? 'active-nav' : ''}
+            onClick={(e) => handleNavClick(e, 'contact', null)}
+          >
+            Contact Us
+          </a>
           <button
             id="theme"
             aria-label="Toggle light and dark theme"
@@ -66,8 +73,8 @@ export default function Header({ currentPage = 'home', onNavigate, onToggleTheme
           </button>
           <a
             className="btn p"
-            href="#contact"
-            onClick={(e) => handleNavClick(e, 'home', 'contact')}
+            href="#contact-page"
+            onClick={(e) => handleNavClick(e, 'contact', null)}
           >
             Let’s talk <Arrow />
           </a>

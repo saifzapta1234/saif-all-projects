@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { Arrow, Label, Reveal } from './ui.jsx';
 import { ALL_PROJECTS, CATEGORIES } from '../data.js';
+import ContactForm from './ContactForm.jsx';
 
 export default function Projects({ onNavigate }) {
   const [activeCategory, setActiveCategory] = useState('All');
@@ -206,40 +207,23 @@ export default function Projects({ onNavigate }) {
           </div>
         )}
 
-        {/* Bottom CTA */}
-        <Reveal className="projects-bottom-cta glass">
-          <div>
-            <h3>Need a custom website or digital product?</h3>
+        {/* Embedded Functional Contact Form on Projects Page */}
+        <Reveal className="projects-contact-section">
+          <div className="projects-contact-header">
+            <Label>// START A PROJECT</Label>
+            <h2>
+              Like what you see? <span className="gt">Let’s work together.</span>
+            </h2>
             <p>
-              I turn complex business requirements and modern designs into fast,
-              clean, and responsive web experiences.
+              Send your project specifications below to get an estimated timeline and quote.
             </p>
           </div>
-          <div className="cta-buttons">
-            <button
-              type="button"
-              className="btn p"
-              onClick={() => {
-                onNavigate('home');
-                setTimeout(() => {
-                  const el = document.getElementById('contact');
-                  if (el) el.scrollIntoView({ behavior: 'smooth' });
-                }, 100);
-              }}
-            >
-              Let’s talk <Arrow />
-            </button>
-            <button
-              type="button"
-              className="btn"
-              onClick={() => {
-                onNavigate('home');
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-              }}
-            >
-              Back to Home
-            </button>
-          </div>
+
+          <ContactForm
+            title="Project Inquiry & Scope"
+            subtitle="Tell me what you’re looking to build, migrate, or improve."
+            compact={false}
+          />
         </Reveal>
       </div>
     </div>

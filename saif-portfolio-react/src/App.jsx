@@ -3,6 +3,7 @@ import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
 import Work from './components/Work.jsx';
 import Projects from './components/Projects.jsx';
+import ContactPage from './components/ContactPage.jsx';
 import About from './components/About.jsx';
 import Toolkit from './components/Toolkit.jsx';
 import Contact from './components/Contact.jsx';
@@ -23,6 +24,19 @@ export default function App() {
     if (hash === '#projects' || path.endsWith('/projects')) {
       return 'projects';
     }
+    if (
+      hash === '#contact-page' ||
+      hash === '#contact-us' ||
+      hash === '#contact' ||
+      path.endsWith('/contact')
+    ) {
+      // Check if navigating to the page or the home anchor
+      if (hash === '#contact' && !path.endsWith('/contact')) {
+        // If someone clicked #contact on home, stay on home and let it scroll
+        return 'home';
+      }
+      return 'contact';
+    }
     return 'home';
   };
 
@@ -32,8 +46,14 @@ export default function App() {
     setCurrentPage(page);
     if (page === 'projects') {
       window.location.hash = '#projects';
+    } else if (page === 'contact') {
+      window.location.hash = '#contact-page';
     } else {
-      if (window.location.hash === '#projects') {
+      if (
+        window.location.hash === '#projects' ||
+        window.location.hash === '#contact-page' ||
+        window.location.hash === '#contact-us'
+      ) {
         history.replaceState(null, '', window.location.pathname);
       }
     }
@@ -97,13 +117,15 @@ export default function App() {
       <main id="top">
         {currentPage === 'projects' ? (
           <Projects onNavigate={navigate} />
+        ) : currentPage === 'contact' ? (
+          <ContactPage onNavigate={navigate} />
         ) : (
           <>
             <Hero />
             <Work onNavigate={navigate} />
             <About />
             <Toolkit />
-            <Contact />
+            <Contact onNavigate={navigate} />
           </>
         )}
       </main>
