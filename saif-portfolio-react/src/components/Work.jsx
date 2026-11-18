@@ -29,29 +29,6 @@ function ProjectCard({ p }) {
               <span key={x}>{x}</span>
             ))}
           </div>
-
-          <div className="card-actions">
-            {p.live && (
-              <a
-                href={p.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-link primary"
-              >
-                Visit Live Site <Arrow />
-              </a>
-            )}
-            {p.figma && (
-              <a
-                href={p.figma}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-link secondary"
-              >
-                Figma Design <Arrow />
-              </a>
-            )}
-          </div>
         </div>
       </div>
     </Reveal>

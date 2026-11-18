@@ -30,7 +30,7 @@ export const ALL_PROJECTS = [
     g: 'linear-gradient(135deg,#0ea5e9,#6d28d9 60%,#c026d3)',
     d: 'A technology company website focused on presenting services, industries and digital solutions with a polished, responsive experience.',
     c: ['WordPress', 'Elementor', 'Responsive UI', 'PHP'],
-    live: 'https://zaptatech.com/',
+    live: '',
     figma: '',
     featured: true,
     big: 1
@@ -46,7 +46,7 @@ export const ALL_PROJECTS = [
     g: 'linear-gradient(135deg,#2563eb,#06b6d4)',
     d: 'Built a modern, AI-focused logistics platform with intuitive UI/UX, emphasizing speed and clarity to showcase ParcelAI’s cutting-edge solutions.',
     c: ['AI Technology', 'UI/UX Design', 'Responsive UI', 'Front End'],
-    live: 'http://parcelai.co/',
+    live: '',
     figma: '',
     featured: true
   },
@@ -61,7 +61,7 @@ export const ALL_PROJECTS = [
     g: 'linear-gradient(135deg,#0284c7,#0d9488)',
     d: 'Built a modern corporate WordPress website for a global digital solutions company, with clear service storytelling, responsive layouts, and conversion-focused contact journeys.',
     c: ['WordPress', 'E-commerce', 'Responsive UI', 'PHP'],
-    live: 'https://52north.co/',
+    live: '',
     figma: '',
     featured: true
   },
@@ -76,7 +76,7 @@ export const ALL_PROJECTS = [
     g: 'linear-gradient(135deg,#7c3aed,#ec4899)',
     d: 'Built a sleek agency website with fluid animations, conversion-optimized layouts, and integrated creative and media solutions to support measurable B2B growth.',
     c: ['Front End', 'Fluid Animations', 'Conversion CRO', 'Responsive UI'],
-    live: 'https://www.dapper.agency/',
+    live: '',
     figma: '',
     featured: true
   },
@@ -91,7 +91,7 @@ export const ALL_PROJECTS = [
     g: 'linear-gradient(135deg,#059669,#0284c7)',
     d: 'Built a sophisticated, responsive website for a leading dermatology company, emphasizing brand identity, scientific credibility, and a polished user experience.',
     c: ['Healthcare UI', 'Corporate Design', 'Accessibility', 'Responsive UI'],
-    live: 'https://www.dermavant.com/',
+    live: '',
     figma: '',
     featured: true
   },
@@ -106,7 +106,7 @@ export const ALL_PROJECTS = [
     g: 'linear-gradient(135deg,#ea580c,#d97706 60%,#e11d48)',
     d: 'Created an engaging event-catering marketplace showcasing global cuisines, with customized commerce features and smooth navigation for discovering and ordering food.',
     c: ['WooCommerce', 'Marketplace', 'Custom Navigation', 'Responsive UI'],
-    live: 'https://www.heyfoodisready.com/',
+    live: '',
     figma: '',
     featured: true
   },
@@ -121,8 +121,8 @@ export const ALL_PROJECTS = [
     g: 'linear-gradient(135deg,#0f766e,#1d4ed8)',
     d: 'A multidisciplinary architecture and engineering firm website presenting its services, nationwide reach and portfolio in a clean, responsive layout.',
     c: ['WordPress', 'Elementor', 'Commercial Portfolio', 'Responsive UI'],
-    live: 'https://dimensiongroup.com/',
-    figma: 'https://www.figma.com/design/X1K7x4joRkExnyigQSCL1o/Dimension-Group--Copy---Copy-?node-id=4038-722&t=viqIEgmV5TKizQlA-0',
+    live: '',
+    figma: '',
     featured: true
   },
   {
@@ -136,8 +136,8 @@ export const ALL_PROJECTS = [
     g: 'linear-gradient(135deg,#1e293b,#3b82f6 70%,#60a5fa)',
     d: 'Developed an institutional wealth management website with sophisticated visual hierarchy, trust-building financial advisory presentation, and modern typography.',
     c: ['Front End', 'Financial UI', 'Responsive UI', 'Landing Page'],
-    live: 'https://zyoncapital.io/',
-    figma: 'https://www.figma.com/design/YAPSiNjHNAhSmc28EMNO6k/ZYON-Capital-%7C-Landing-Page-%7C-Wealth-Management?node-id=16714-114&t=qnU6mz9Rdkkso8xl-0',
+    live: '',
+    figma: '',
     featured: true
   },
   {
@@ -151,7 +151,7 @@ export const ALL_PROJECTS = [
     g: 'linear-gradient(135deg,#0d9488,#0284c7)',
     d: 'Developed a healthcare website for a compounding pharmacy, structuring human and veterinary services, patient resources, refill pathways, and trust-focused clinical content.',
     c: ['Healthcare', 'Clinical UX', 'Responsive UI', 'Patient Pathways'],
-    live: 'https://avriorx.com/',
+    live: '',
     figma: '',
     featured: false
   },
@@ -166,7 +166,7 @@ export const ALL_PROJECTS = [
     g: 'linear-gradient(135deg,#b45309,#78350f)',
     d: 'Developed a polished jewellery e-commerce website with premium collection browsing, product discovery, bulk ordering, and a streamlined online purchasing experience.',
     c: ['WooCommerce', 'B2B Catalog', 'E-commerce UI', 'Responsive'],
-    live: 'https://simonalexanderuk.com/',
+    live: '',
     figma: '',
     featured: false
   },
@@ -181,8 +181,8 @@ export const ALL_PROJECTS = [
     g: 'linear-gradient(135deg,#f59e0b,#dc2626)',
     d: 'A services website for an electrical business with clear service information, high-converting enquiry pathways, and responsive layouts.',
     c: ['Front End', 'Responsive UI', 'Lead Forms', 'Local Business'],
-    live: 'https://anodeelectrical.com.au/',
-    figma: 'https://www.figma.com/design/Bzttp3iAIVxkTHJvL1aCos/Anode-Electrical-%7C-Website-%7C-Electrical---Leigh-Miller?node-id=4061-1120&t=pTLtPNVVZhe96CYU-0',
+    live: '',
+    figma: '',
     featured: false
   },
   {
@@ -196,8 +196,8 @@ export const ALL_PROJECTS = [
     g: 'linear-gradient(135deg,#7c2d12,#c2410c 55%,#f59e0b)',
     d: 'A polished, responsive commercial real estate website presenting property listings, healthcare facilities, and market consulting in a clean structure.',
     c: ['Front End', 'Property Listings', 'Responsive UI', 'Commercial'],
-    live: 'https://winstonwarren.com/',
-    figma: 'https://www.figma.com/design/X4VlqJykL0c8WQYcaZOsNJ/Winston-Warren?node-id=2591-4845&t=33NuspZJXETbXRxL-1',
+    live: '',
+    figma: '',
     featured: false
   },
   {
@@ -211,8 +211,8 @@ export const ALL_PROJECTS = [
     g: 'linear-gradient(135deg,#6366f1,#a855f7 60%,#ec4899)',
     d: 'Dynamic marketing summit and growth agency website built for event registration, conference schedule showcases, and high-conversion ticketing flows.',
     c: ['Event Registration', 'CRO Agency', 'Interactive UI', 'Responsive'],
-    live: 'https://trafficsummits.com/',
-    figma: 'https://www.figma.com/design/AGkgWxz98BnFsfhyUGOns2/Traffic-Summits-Website--Copy-?node-id=3053-6022&t=JpAi6rPLYajahtyL-0',
+    live: '',
+    figma: '',
     featured: false
   },
   {
@@ -226,7 +226,7 @@ export const ALL_PROJECTS = [
     g: 'linear-gradient(135deg,#2563eb,#22d3ee)',
     d: 'A comprehensive platform website for business formation, operations, and compliance serving startups and growing businesses.',
     c: ['SaaS UI', 'Responsive UI', 'Front End', 'Business Platform'],
-    live: 'https://employerease.com/',
+    live: '',
     figma: '',
     featured: false
   },
@@ -241,8 +241,8 @@ export const ALL_PROJECTS = [
     g: 'linear-gradient(135deg,#059669,#10b981 60%,#06b6d4)',
     d: 'Warm and welcoming coworking community website with space tour bookings, flexible membership plans, and community event listings.',
     c: ['Coworking Spaces', 'Tour Bookings', 'UI/UX Design', 'Responsive'],
-    live: 'https://conscious-coworking.com/',
-    figma: 'https://www.figma.com/design/ULq2tCvsFucvAN17iHw7SI/Conscious-Co-Working-%7C-Website-%7C-Co-Working-Spaces?node-id=3-15740&p=f&t=ZKVnRSvUFemTTKFG-0',
+    live: '',
+    figma: '',
     featured: false
   },
   {
@@ -256,13 +256,13 @@ export const ALL_PROJECTS = [
     g: 'linear-gradient(135deg,#854d0e,#ca8a04 60%,#eab308)',
     d: 'Designed a conversion-optimized website for a sales training academy, featuring bold visuals, structured course content, and an efficient lead-generation system.',
     c: ['Education Portal', 'Lead Generation', 'WordPress', 'Responsive UI'],
-    live: 'https://salesakademie.de/',
+    live: '',
     figma: '',
     featured: false
   }
 ];
 
-export const FEATURED_PROJECTS = ALL_PROJECTS.filter(p => p.featured);
+export const FEATURED_PROJECTS = ALL_PROJECTS.filter((p) => p.featured);
 export const PROJECTS = FEATURED_PROJECTS;
 
 export const JOBS = [
