@@ -267,14 +267,19 @@ export const PROJECTS = FEATURED_PROJECTS;
 
 export const JOBS = [
   {
-    d: 'March 2024 — December 2026',
-    r: 'WordPress Developer\nPHP Plugin & Theme Development',
+    d: 'March 2024 — Present',
+    r: 'Senior WordPress Developer\nPHP Plugin & Theme Development',
     c: 'ZAPTA Technologies, Lahore'
   },
   {
-    d: '2023 — 2024',
-    r: 'Front End Developer',
+    d: '2022 — 2024',
+    r: 'Front End & WordPress Developer',
     c: 'Whetstonez Technologies, Lahore'
+  },
+  {
+    d: '2020 — 2022',
+    r: 'Web Designer & WordPress Specialist',
+    c: 'Freelance & Digital Solutions'
   }
 ];
 
