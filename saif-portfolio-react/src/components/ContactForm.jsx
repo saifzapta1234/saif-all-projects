@@ -10,7 +10,6 @@ export default function ContactForm({
     name: '',
     email: '',
     service: 'WordPress & Elementor Development',
-    budget: '$1,000 - $3,000',
     message: ''
   });
 
@@ -69,7 +68,6 @@ export default function ContactForm({
       name: true,
       email: true,
       service: true,
-      budget: true,
       message: true
     });
 
@@ -93,7 +91,6 @@ export default function ContactForm({
         name: '',
         email: '',
         service: 'WordPress & Elementor Development',
-        budget: '$1,000 - $3,000',
         message: ''
       });
       setTouched({});
@@ -130,7 +127,7 @@ export default function ContactForm({
               href={`mailto:su853844@gmail.com?subject=${encodeURIComponent(
                 `Project Inquiry: ${lastSubmitted?.service}`
               )}&body=${encodeURIComponent(
-                `Hi Saif,\n\nName: ${lastSubmitted?.name}\nEmail: ${lastSubmitted?.email}\nService: ${lastSubmitted?.service}\nBudget: ${lastSubmitted?.budget}\n\nMessage:\n${lastSubmitted?.message}`
+                `Hi Saif,\n\nName: ${lastSubmitted?.name}\nEmail: ${lastSubmitted?.email}\nService: ${lastSubmitted?.service}\n\nMessage:\n${lastSubmitted?.message}`
               )}`}
               className="btn p"
             >
@@ -184,7 +181,7 @@ export default function ContactForm({
             </div>
 
             {/* Service */}
-            <div className="form-group">
+            <div className="form-group full-width">
               <label htmlFor={`service-${compact ? 'c' : 'f'}`}>Service Needed</label>
               <select
                 id={`service-${compact ? 'c' : 'f'}`}
@@ -211,23 +208,6 @@ export default function ContactForm({
                   Website Migration &amp; Maintenance
                 </option>
                 <option value="Other Consulting">Other Consulting</option>
-              </select>
-            </div>
-
-            {/* Budget */}
-            <div className="form-group">
-              <label htmlFor={`budget-${compact ? 'c' : 'f'}`}>Expected Budget</label>
-              <select
-                id={`budget-${compact ? 'c' : 'f'}`}
-                name="budget"
-                value={formData.budget}
-                onChange={handleChange}
-              >
-                <option value="< $1,000">&lt; $1,000</option>
-                <option value="$1,000 - $3,000">$1,000 - $3,000</option>
-                <option value="$3,000 - $5,000">$3,000 - $5,000</option>
-                <option value="$5,000+">$5,000+</option>
-                <option value="To be discussed">To be discussed</option>
               </select>
             </div>
 
@@ -278,4 +258,3 @@ export default function ContactForm({
     </div>
   );
 }
-
