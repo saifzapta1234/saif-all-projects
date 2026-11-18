@@ -4,12 +4,12 @@
   --card: rgba(255, 255, 255, .035);
   --text: #f5f5f7;
   --muted: #9aa0b2;
-  --line: rgba(245, 197, 66, .14);
-  --c1: #fcd34d;
-  --c2: #f59e0b;
-  --c3: #ea580c;
-  --grad: linear-gradient(110deg, #fef08a 0%, #f59e0b 46%, #ea580c 100%);
-  --glow: .45;
+  --line: rgba(245, 190, 56, .14);
+  --c1: #f5be38;
+  --c2: #f5be38;
+  --c3: #f5be38;
+  --grad: var(--c1);
+  --glow: .4;
   --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --head: 'Inter Tight', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --mono: 'JetBrains Mono', ui-monospace, monospace;
@@ -27,10 +27,10 @@
     --text: #181715;
     --muted: #6b665c;
     --line: rgba(180, 130, 40, .16);
-    --c1: #b45309;
-    --c2: #92400e;
-    --c3: #78350f;
-    --grad: linear-gradient(110deg, #d97706 0%, #b45309 50%, #78350f 100%);
+    --c1: #c88a1b;
+    --c2: #c88a1b;
+    --c3: #c88a1b;
+    --grad: var(--c1);
     --glow: .2;
     color-scheme: light;
   }
@@ -43,10 +43,10 @@
   --text: #181715;
   --muted: #6b665c;
   --line: rgba(180, 130, 40, .16);
-  --c1: #b45309;
-  --c2: #92400e;
-  --c3: #78350f;
-  --grad: linear-gradient(110deg, #d97706 0%, #b45309 50%, #78350f 100%);
+  --c1: #c88a1b;
+  --c2: #c88a1b;
+  --c3: #c88a1b;
+  --grad: var(--c1);
   --glow: .2;
   color-scheme: light;
 }
@@ -99,10 +99,10 @@ a {
 }
 
 .gt {
-  background: var(--grad);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent
+  color: var(--c1);
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
 }
 
 #spot {
@@ -114,7 +114,7 @@ a {
   top: 0;
   pointer-events: none;
   z-index: 1;
-  background: radial-gradient(circle, var(--c2), transparent 65%);
+  background: radial-gradient(circle, var(--c1), transparent 65%);
   opacity: calc(var(--glow)*.35);
   transform: translate(-50%, -50%);
   transition: opacity .3s
@@ -164,12 +164,13 @@ header .wrap {
   width: 34px;
   height: 34px;
   border-radius: 10px;
-  background: var(--grad);
+  background: var(--c1);
   display: grid;
   place-items: center;
-  color: #06070f;
+  color: #08090d;
   font-size: 14px;
-  box-shadow: 0 0 22px color-mix(in srgb, var(--c1) 55%, transparent);
+  font-weight: 800;
+  box-shadow: 0 0 20px color-mix(in srgb, var(--c1) 40%, transparent);
   font-family: var(--head)
 }
 
@@ -202,7 +203,7 @@ nav a.active-nav::after {
   left: 0;
   right: 0;
   height: 2px;
-  background: var(--grad);
+  background: var(--c1);
   border-radius: 2px
 }
 
@@ -234,8 +235,9 @@ nav a.active-nav::after {
   border-radius: 99px;
   font-weight: 600;
   font-size: 14px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(255, 255, 255, .22);
   background: var(--card);
+  color: #ffffff;
   transition: .25s;
   position: relative;
   cursor: pointer;
@@ -243,18 +245,27 @@ nav a.active-nav::after {
 }
 
 .btn:hover {
-  border-color: var(--c1);
-  box-shadow: 0 0 26px color-mix(in srgb, var(--c1) 45%, transparent);
+  border-color: #ffffff;
+  color: #ffffff;
+  box-shadow: 0 0 24px rgba(255, 255, 255, .25);
   transform: translateY(-2px)
 }
 
 .btn.p {
-  background: var(--grad);
+  background: #ffffff;
   color: #08090d;
   font-weight: 700;
   text-shadow: none;
-  border: 0;
-  box-shadow: 0 0 28px color-mix(in srgb, var(--c1) 45%, transparent)
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 24px rgba(255, 255, 255, .28)
+}
+
+.btn.p:hover {
+  background: #f0f0f2;
+  color: #08090d;
+  border-color: #ffffff;
+  box-shadow: 0 0 34px rgba(255, 255, 255, .5);
+  transform: translateY(-2px)
 }
 
 .ar {
@@ -337,9 +348,10 @@ footer a {
 .o1 {
   width: 460px;
   height: 460px;
-  background: var(--c2);
+  background: var(--c1);
   top: -120px;
-  right: -100px
+  right: -100px;
+  opacity: calc(var(--glow) * .4)
 }
 
 .o2 {
@@ -348,16 +360,17 @@ footer a {
   background: var(--c1);
   bottom: -100px;
   left: -80px;
-  animation-delay: -5s
+  animation-delay: -5s;
+  opacity: calc(var(--glow) * .3)
 }
 
 .o3 {
   width: 260px;
   height: 260px;
-  background: var(--c3);
+  background: var(--c1);
   top: 35%;
   right: 30%;
-  opacity: calc(var(--glow)*.6)
+  opacity: calc(var(--glow) * .25)
 }
 
 @keyframes float {
@@ -480,7 +493,7 @@ h2 {
   position: absolute;
   inset: 0;
   border-radius: 22px;
-  background: radial-gradient(380px circle at var(--mx) var(--my), var(--c1), var(--c2) 40%, transparent 70%);
+  background: radial-gradient(380px circle at var(--mx) var(--my), var(--c1), transparent 70%);
   opacity: 0;
   transition: opacity .3s
 }
@@ -770,10 +783,10 @@ h2 {
   display: block;
   font-size: 34px;
   letter-spacing: -.04em;
-  background: var(--grad);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: var(--c1);
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
   font-family: var(--head)
 }
 
@@ -797,7 +810,7 @@ h2 {
   top: 8px;
   bottom: 8px;
   width: 2px;
-  background: var(--grad)
+  background: var(--c1)
 }
 
 .job {
@@ -1026,10 +1039,10 @@ h2 {
 }
 
 .cat-tab.active {
-  background: var(--grad);
+  background: #ffffff;
   color: #08090d;
-  border-color: transparent;
-  box-shadow: 0 0 20px color-mix(in srgb, var(--c1) 45%, transparent);
+  border-color: #ffffff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, .25);
   font-weight: 700
 }
 
@@ -1328,14 +1341,14 @@ h2 {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background: var(--grad);
+  background: #ffffff;
   display: grid;
   place-items: center;
   font-size: 26px;
-  color: #06070f;
+  color: #08090d;
   margin: 0 auto 16px;
   font-weight: 700;
-  box-shadow: 0 0 28px color-mix(in srgb, var(--c1) 60%, transparent);
+  box-shadow: 0 0 28px rgba(255, 255, 255, .35);
 }
 
 .form-success-banner h4 {
@@ -1375,8 +1388,8 @@ h2 {
   height: 760px;
   max-width: 140vw;
   transform: translate(-50%, -50%);
-  background: radial-gradient(circle, var(--c2), transparent 62%);
-  opacity: calc(var(--glow)*.5);
+  background: radial-gradient(circle, var(--c1), transparent 62%);
+  opacity: calc(var(--glow)*.35);
   pointer-events: none;
 }
 
